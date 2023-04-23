@@ -31,7 +31,7 @@ with open('SteelEye.csv', 'w', newline='') as csvfile:
 
         # Write the values to the CSV file
         writer.writerow([checksum, download_link, publication_date, id, published_instrument_file_id, _root_, file_name, file_type, _version_, timestamp])
-print("XML to CSV conversion complete. CSV file created as 'output.csv'.")
+print("XML to CSV conversion complete. CSV file created as 'SteelEye.csv'.")
 
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
